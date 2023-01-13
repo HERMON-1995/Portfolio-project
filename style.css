@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  height: 774px;
+  height: 726px;
   width: 375px;
   background-color: white;
 }
@@ -25,9 +25,10 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
-h1 {
+.logo {
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -35,11 +36,16 @@ h1 {
   margin-left: 24px;
 }
 
+ul {
+  list-style: none;
+}
+
 .menu {
   width: 18px;
   height: 12px;
   float: right;
   margin-right: 35px;
+  margin-bottom: 10px;
 }
 
 .headline {
@@ -83,6 +89,10 @@ h1 {
   order: 1;
   flex: none;
   flex-grow: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .social-media {
