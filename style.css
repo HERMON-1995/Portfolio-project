@@ -5,7 +5,6 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,20 +269,20 @@ h3 {
   height: 107px;
   background-image: url('./Header-images/about\ me\ background\ 2.svg');
   background-repeat: no-repeat;
-  background-size: 130px 109px;
-  float: right;
-  margin-top: 20px;
+  margin-left: 310px;
+  margin-top: 10px;
 }
 
 .about-me {
   background-image: url('./Header-images/about\ me\ left\ background\ image.svg');
   background-repeat: no-repeat;
   background-size: 430px 410px;
-  height: 198vh;
+  background-position: 0 80px;
+  display: grid;
 }
 
 .about-text-container {
-  display: flex;
+  margin-right: 120px;
 }
 
 .about-text {
@@ -291,15 +290,15 @@ h3 {
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-  margin-top: 65px;
-  margin-bottom: 5px;
   margin-left: 90px;
+  margin-bottom: 0;
 }
 
 .par-2-container {
   width: 300px;
   height: 189px;
   margin-left: 35px;
+  margin-top: 0;
 }
 
 .par-2 {
@@ -385,6 +384,7 @@ h4 {
   flex-wrap: wrap;
   gap: 10px;
   color: #36b37e;
+  padding-left: 0;
 }
 
 .javascript-2 {
