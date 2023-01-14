@@ -116,11 +116,11 @@ a {
 }
 
 .medium {
-  margin-right: 25px;
+  margin-right: 6px;
 }
 
 .github {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .scroll-button {
@@ -134,7 +134,7 @@ a {
 
 .recent-works {
   width: 220px;
-  height: 140px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -165,28 +165,13 @@ h3 {
 
 .pic-1 {
   width: 327px;
-  height: 260px;
+  height: 100vh;
   background: #ebf0ee;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.pic-1 img {
-  width: 300px;
-  height: 200px;
-  border-radius: 20px;
-}
-
-.lang-icon img {
-  border: 1px solid #ecf0ef;
-  background-color: #ecf0ef;
-  border-radius: 18px;
-  width: 50px;
-}
-
-.pic-1 img:hover {
-  box-shadow: 7px 5px 5px #153e4f;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .project-title-1 {
@@ -269,12 +254,10 @@ h3 {
   border-radius: 4px;
   background: #36b37f;
   border: 0;
-  margin-left: 102px;
+  margin-left: 120px;
   margin-right: 102px;
   margin-top: 35px;
-}
-
-a .button {
+  margin-bottom: 30px;
   color: white;
 }
 
@@ -282,15 +265,25 @@ a .button {
   box-shadow: 7px 5px 5px #b2bec3;
 }
 
+.background {
+  width: 100px;
+  height: 107px;
+  background-image: url('./Header-images/about\ me\ background\ 2.svg');
+  background-repeat: no-repeat;
+  background-size: 130px 109px;
+  float: right;
+  margin-top: 20px;
+}
+
 .about-me {
   background-image: url('./Header-images/about\ me\ left\ background\ image.svg');
   background-repeat: no-repeat;
-  background-size: 430px 389.38px;
+  background-size: 430px 410px;
+  height: 198vh;
 }
 
 .about-text-container {
   display: flex;
-  justify-content: center;
 }
 
 .about-text {
@@ -298,13 +291,15 @@ a .button {
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 65px;
+  margin-bottom: 5px;
+  margin-left: 90px;
 }
 
 .par-2-container {
   width: 300px;
   height: 189px;
-  margin-left: 40px;
+  margin-left: 35px;
 }
 
 .par-2 {
@@ -319,23 +314,37 @@ a .button {
 }
 
 .sections {
+  display: flex;
+  flex-direction: column;
   width: 327px;
-  height: auto;
+  height: 352px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 8px;
   margin-left: 25px;
-  margin-top: 60px;
-  margin-bottom: px;
+  margin-bottom: 20px;
 }
 
-.lang-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 56px;
-  margin-right: 40px;
+.section-1 {
+  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: 109px 41px;
+}
+
+.section-2 {
+  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: 109px 41px;
+}
+
+.section-3 {
+  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: 109px 41px;
 }
 
 h4 {
@@ -351,74 +360,173 @@ h4 {
   flex-grow: 0;
 }
 
-.tools .ruby-2 {
+.sections h4 {
+  margin-left: 30px;
+}
+
+.lang-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 56px;
+  margin-right: 10px;
+}
+
+.lang-icon img {
+  height: 44px;
+  width: 44px;
+  background-color: #fff;
+  border: 0;
+}
+
+.frameworks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #36b37e;
+}
+
+.javascript-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 89px;
   height: 40px;
-  background: white;
-  border-radius: 6px;
-  margin-right: 7px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.tools .html-2 {
+.ruby-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 55px;
   height: 40px;
-  background: white;
-  border-radius: 6px;
-  margin-right: 7px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  background: #fff;
+  border-radius: 8px;
 }
 
-.tools .css-2 {
+.html-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 53px;
   height: 40px;
-  background: white;
-  border-radius: 6px;
-  margin-right: 7px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  background: #fff;
+  border-radius: 8px;
 }
 
-.tools .javascript-2 {
+.css-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
+  width: 55px;
   height: 40px;
-  background: white;
-  border-radius: 6px;
-  margin-right: 7px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  background: #fff;
+  border-radius: 8px;
 }
 
-.two {
-  margin-top: 100px;
-  margin-left: 0;
-}
-
-.frameworks {
+.bootstrap {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  color: #36b37e;
+  align-items: center;
+  width: 84px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ruby-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.rspec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.capybara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.selenium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 81px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.codekit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.github-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+  margin-right: 0;
+}
+
+.codepen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 79px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.gitlab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 61px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.terminal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
 }
 
 .form {
@@ -431,6 +539,7 @@ h4 {
   display: flex;
   width: 350px;
   justify-content: center;
+  margin-left: 11px;
 }
 
 .form-text h3 {
