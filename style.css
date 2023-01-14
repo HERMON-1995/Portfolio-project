@@ -13,9 +13,10 @@ body {
 }
 
 section {
-  height: 726px;
   width: 375px;
+  height: auto;
   background-color: white;
+  margin-bottom: 0;
 }
 
 .header {
@@ -128,13 +129,7 @@ a {
 
 .works-container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-column-gap: 70px;
-  overflow-y: hidden;
-}
-
-.works-container:hover {
-  overflow-y: scroll;
 }
 
 .recent-works {
@@ -157,6 +152,10 @@ h3 {
 
 .project-section-1 {
   border: 1px solid #d0d9d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 327px;
   height: 474px;
   margin-top: 64px;
@@ -166,7 +165,7 @@ h3 {
 
 .pic-1 {
   width: 327px;
-  height: 252px;
+  height: 260px;
   background: #ebf0ee;
   display: flex;
   justify-content: center;
@@ -287,11 +286,6 @@ a .button {
   background-image: url('./Header-images/about\ me\ left\ background\ image.svg');
   background-repeat: no-repeat;
   background-size: 430px 389.38px;
-  overflow-y: hidden;
-}
-
-.about-me:hover {
-  overflow-y: scroll;
 }
 
 .about-text-container {
@@ -326,13 +320,14 @@ a .button {
 
 .sections {
   width: 327px;
-  height: 352px;
+  height: auto;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 8px;
   margin-left: 25px;
   margin-top: 60px;
+  margin-bottom: px;
 }
 
 .lang-icon {
@@ -418,21 +413,18 @@ h4 {
 }
 
 .frameworks {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 8px;
-  column-gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: #36b37e;
 }
 
 .form {
-  overflow-y: hidden;
   background-image: url('./Header-images/back\ ground\ illustration\ form.svg');
   background-repeat: no-repeat;
-  background-position: 320px 360px;
-}
-
-.form:hover {
-  overflow-y: scroll;
+  background-position: 320px 700px;
 }
 
 .form-text {
