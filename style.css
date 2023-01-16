@@ -11,9 +11,13 @@ body {
   background-color: antiquewhite;
 }
 
-body, p, a, ul, li {
-  margin: 0px;
-  padding: 0px;
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -187,7 +191,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .tools .ruby {
@@ -279,7 +283,7 @@ h3 {
   background-image: url('./Header-images/about\ me\ left\ background\ image.svg');
   background-repeat: no-repeat;
   background-size: 430px 410px;
-  background-position: 0px 30px;
+  background-position: 0 30px;
   display: grid;
 }
 
@@ -293,8 +297,8 @@ h3 {
   line-height: 52px;
   text-align: center;
   margin-left: 90px;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .par-2-container {
@@ -569,7 +573,7 @@ h4 {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   background: #fff;
-  padding: 0px 5px;
+  padding: 0 5px;
   margin-bottom: 30px;
 }
 
@@ -578,8 +582,8 @@ h4 {
   height: 114px;
   border: 1px solid #60c095;
   border-radius: 4px;
-  background: #ffffff;
-  padding: 0px 5px;
+  background: #fff;
+  padding: 0 5px;
 }
 
 .last {
@@ -603,5 +607,3 @@ h4 {
   color: #42526e;
   margin-bottom: 100px;
 }
-
-
