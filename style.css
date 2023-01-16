@@ -11,6 +11,12 @@ body {
   background-color: antiquewhite;
 }
 
+body, p, a, ul, li {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
 section {
   width: 375px;
   height: auto;
@@ -19,7 +25,6 @@ section {
 }
 
 .header {
-  width: 375px;
   height: 48px;
   border-bottom: 1px solid #f0f3f2;
   justify-content: space-between;
@@ -53,7 +58,6 @@ ul {
   background-image: url('./Header-images/backgroundimg.svg');
   background-repeat: no-repeat;
   height: 774px;
-  width: 375px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -100,6 +104,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
   margin-top: 50px;
   flex: none;
   order: 2;
@@ -107,28 +112,23 @@ a {
 }
 
 .twitter {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .linkedin {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .medium {
-  margin-right: 6px;
+  margin-right: 20px;
 }
 
 .github {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .scroll-button {
   margin-top: 25px;
-}
-
-.works-container {
-  display: grid;
-  grid-column-gap: 70px;
 }
 
 .recent-works {
@@ -157,9 +157,9 @@ h3 {
   align-items: center;
   width: 327px;
   height: 474px;
-  margin-top: 64px;
-  margin-left: 22px;
   border-radius: 8px;
+  margin-top: 64px;
+  margin-left: 23px;
 }
 
 .pic-1 {
@@ -178,15 +178,16 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
 }
 
 .tools {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 40px;
+  padding: 0px 20px;
 }
 
 .tools .ruby {
@@ -253,7 +254,7 @@ h3 {
   border-radius: 4px;
   background: #36b37f;
   border: 0;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-right: 102px;
   margin-top: 35px;
   margin-bottom: 30px;
@@ -269,6 +270,7 @@ h3 {
   height: 107px;
   background-image: url('./Header-images/about\ me\ background\ 2.svg');
   background-repeat: no-repeat;
+  background-size: 65px;
   margin-left: 310px;
   margin-top: 10px;
 }
@@ -277,7 +279,7 @@ h3 {
   background-image: url('./Header-images/about\ me\ left\ background\ image.svg');
   background-repeat: no-repeat;
   background-size: 430px 410px;
-  background-position: 0 80px;
+  background-position: 0px 30px;
   display: grid;
 }
 
@@ -291,7 +293,8 @@ h3 {
   line-height: 52px;
   text-align: center;
   margin-left: 90px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .par-2-container {
@@ -310,6 +313,10 @@ h3 {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.resume {
+  margin-left: 123px;
 }
 
 .sections {
@@ -532,7 +539,7 @@ h4 {
 .form {
   background-image: url('./Header-images/back\ ground\ illustration\ form.svg');
   background-repeat: no-repeat;
-  background-position: 320px 700px;
+  background-position: 320px 680px;
 }
 
 .form-text {
@@ -562,6 +569,7 @@ h4 {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   background: #fff;
+  padding: 0px 5px;
   margin-bottom: 30px;
 }
 
@@ -570,15 +578,21 @@ h4 {
   height: 114px;
   border: 1px solid #60c095;
   border-radius: 4px;
-  background: #fff;
+  background: #ffffff;
+  padding: 0px 5px;
 }
 
-a .last {
-  margin-bottom: 50px;
+.last {
+  margin-right: 120px;
+}
+
+.footer {
+  background: white;
 }
 
 .last-social {
-  margin-right: 50px;
+  margin-right: 5px;
+  margin-bottom: 20px;
 }
 
 .email-address {
@@ -587,10 +601,7 @@ a .last {
   line-height: 32px;
   text-align: center;
   color: #42526e;
+  margin-bottom: 100px;
 }
 
-.email-container {
-  width: 356px;
-  height: 189px;
-  border-bottom: 4px solid #42526e;
-}
+
