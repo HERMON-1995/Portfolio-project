@@ -191,13 +191,17 @@ h3 {
   display: flex;
   flex-direction: row;
   padding: 0 20px;
-  gap: 5px;
+  gap: 2px;
   margin-bottom: 20px;
-  float: right;
+  float: inherit;
+  padding-left: 20px;
 
 }
 
 .tools .ruby {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 103px;
   height: 32px;
   background: #ebf0ee;
