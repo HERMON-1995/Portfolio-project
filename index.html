@@ -211,11 +211,11 @@
            <div class="form-text"><h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3></div>
 
            <form for="" method="post" class="inputs">
-             <input type="text" id="full-name"  name="user_name" placeholder="Full name">
+             <input type="text" id="full-name"  name="user_name" placeholder="Full name" required maxlength="30">
 
-             <input type="email" id="email-address" name="user_email" placeholder="Email address">
+             <input type="email" id="email-address" name="user_email" placeholder="Email address" required>
 
-             <textarea id="msg" name="user_message" placeholder="Enter text here"></textarea>
+             <textarea id="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
 
              <button type="submit" class="button last">Get In Touch</button>
              
