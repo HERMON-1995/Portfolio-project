@@ -55,7 +55,6 @@ ul {
   height: 12px;
   float: right;
   margin-right: 35px;
-  margin-bottom: 10px;
 }
 
 .headline {
@@ -98,10 +97,6 @@ h2 {
   order: 1;
   flex: none;
   flex-grow: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 .social-media {
@@ -266,7 +261,8 @@ h3 {
 }
 
 .button:hover {
-  box-shadow: 7px 5px 5px #b2bec3;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background: #008552;
 }
 
 .background {
@@ -340,7 +336,7 @@ h3 {
   background-image: url('./Header-images/Ellipse\ 15.svg');
   background-repeat: no-repeat;
   background-size: 100px 100px;
-  background-position: 109px 41px;
+  background-position: 108px 41px;
 }
 
 .section-2 {
@@ -567,7 +563,7 @@ h4 {
   justify-content: center;
 }
 
-.input {
+#full-name {
   width: 327px;
   height: 40px;
   border: 1px solid #d0d9d4;
@@ -577,7 +573,17 @@ h4 {
   margin-bottom: 30px;
 }
 
-.textarea {
+#email-address {
+  width: 327px;
+  height: 40px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  background: #fff;
+  padding: 0 5px;
+  margin-bottom: 30px;
+}
+
+#msg {
   width: 327px;
   height: 114px;
   border: 1px solid #60c095;

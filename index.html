@@ -156,6 +156,7 @@
           <div class="background"></div>
 
             <div class="about-text-container"><h3 class="about-text">About me</h3></div>
+
              <div class="par-2-container"><p class="par-2">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p></div>
 
              <a href="#about-me" class="button resume">Get My Resume</a>
@@ -209,14 +210,16 @@
 
            <div class="form-text"><h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3></div>
 
-           <form class="inputs">
-            <input class="input" type="text" id="full-name" placeholder="Full name">
+           <form for="" method="post" class="inputs">
+             <input type="text" id="full-name"  name="user_name" placeholder="Full name">
 
-            <input class="input" type="email" id="email-address" placeholder="Email address">
+             <input type="email" id="email-address" name="user_email" placeholder="Email address">
 
-            <textarea class="textarea" name="enter-text" id="enter-text" cols="30" rows="10" placeholder="Enter text here"></textarea>
+             <textarea id="msg" name="user_message" placeholder="Enter text here"></textarea>
 
-           <button class="button last">Get In Touch</button>
+             <button type="submit" class="button last">Get In Touch</button>
+             
+           </form>
           </div>
         </section>
 
