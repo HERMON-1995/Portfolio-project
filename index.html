@@ -8,19 +8,21 @@
     <title>Hermons' Portfolio</title>
 </head>
 <body>
-  <section class="mobile-section">
+  <div>
     <header class="header">
      <h1 class="logo">Welcome</h1>
      <nav class="site-nav grid"> 
         <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="#"><img class="menu" src="/Header-images/3-lines.svg" alt="Menu icon"></a></li>
         </ul>
      </nav>
     </header>
 
-    <section class="welcome">
-        <main class="headline">
-          <div>
+        <section class="headline grid">
+          <div class="grid-item">
             <h1>Hey there. I'm Hermon</h1>
             <h2>I'm a software developer</h2>
             <p class="par-1">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -42,18 +44,19 @@
                 </div>
 
               </div>
-           </main>
-       </section>
+           </section>
 
        <section id="portfolio" class="works-container">
+
+        <div class="grid">
+
           <div class="recent-works"><h3>My Recent Works</h3>
           </div>
             
-          <div class="grid">
 
             <!--Project section-1 in Grid-->
 
-           <div class="project-section-1">
+           <div class="project-section-1 project-1">
              <div class="pic-1"></div>
 
              <div class="project-work">
@@ -69,7 +72,7 @@
            </div>
              <!--Project section-2 in Grid-->
 
-             <div class="project-section-1">
+             <div class="project-section-1 project-2">
                 <div class="pic-1"></div>
    
                 <div class="project-work">
@@ -85,7 +88,7 @@
               </div>
              <!--Project section-3 in Grid-->
 
-             <div class="project-section-1">
+             <div class="project-section-1 project-3">
                 <div class="pic-1"></div>
    
                 <div class="project-work">
@@ -101,7 +104,7 @@
               </div>
              <!--Project section-4 in Grid-->
 
-             <div class="project-section-1">
+             <div class="project-section-1 product-4">
                 <div class="pic-1"></div>
    
                 <div class="project-work">
@@ -117,7 +120,7 @@
               </div>
               <!--Project section-5 in Grid-->
 
-             <div class="project-section-1">
+             <div class="project-section-1 project-5">
               <div class="pic-1"></div>
  
               <div class="project-work">
@@ -133,7 +136,7 @@
             </div>
             <!--Project section-6 in Grid-->
 
-            <div class="project-section-1">
+            <div class="project-section-1 project-6">
               <div class="pic-1"></div>
  
               <div class="project-work">
@@ -153,7 +156,7 @@
         <!--About me section-->
 
         <section id="about" class="about-me">
-          <div class="background"></div>
+          <div class="grid">
 
             <div class="about-text-container"><h3 class="about-text">About me</h3></div>
 
@@ -161,10 +164,9 @@
 
              <a href="#about-me" class="button resume">Get My Resume</a>
 
-             <div class="grid">
         <!--About me section-1-->
 
-             <section class="sections section-1">
+             <div class="sections section-1">
                 <div class="lang-icon"><img src="./Header-images/Icon Langguage.svg" alt="Language icone"></div>
                 <h4>Languages</h4>
                 
@@ -174,10 +176,10 @@
                   <li class="html-2">Html</li>
                   <li class="css-2">CSS</li>
              </ul>
-             </section>
+             </div>
 
         <!--About me section-2-->
-        <section class="sections section-2">
+        <div class="sections section-2">
            <div class="lang-icon"><img src="./Header-images/rectangle Groupicones.svg" alt="Rectangle icones"></div>
            <h4>Frameworks</h4>
            <ul class="frameworks">
@@ -187,9 +189,9 @@
              <li class="capybara">Capybara</li>
              <li class="selenium">Selenium</li>
           </ul>
-        </section>
+        </div>
         <!--About me section-3-->
-        <section class="sections section-3">
+        <div class="sections section-3">
          <div class="lang-icon"><img src="./Header-images/lightning icone.svg" alt="lightning icones"></div>
          <h4>Skills</h4>
          <ul class="frameworks">
@@ -199,27 +201,28 @@
            <li class="gitlab">Gitlab</li>
            <li class="terminal">Terminal</li>
          </ul>
-         </section>
+         </div>
 
         </div>
         </section>
 
         <!--Form section-->
         <section id="contact" class="form">
-          <div class="grid-2">
+          <div class="grid">
 
            <div class="form-text"><h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3></div>
 
-           <form action="https://formspree.io/f/mpzewdrj" method="post" class="inputs">
+           <form action="https://formspree.io/f/mpzewdrj" method="post" class="inputs grid">
              <input type="text" class="input"  name="user_name" placeholder="Full name" required maxlength="30">
 
              <input type="email" class="input" name="user_email" placeholder="Email address" required>
 
-             <textarea id="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
+             <textarea class="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
 
              <button type="submit" class="button last">Get In Touch</button>
              
            </form>
+
           </div>
         </section>
 
@@ -240,6 +243,5 @@
 
            <div class="email-container"><p class="email-address">hermonghiwot1995@gmail.com</p></div>
         </footer>
-  </div>
 </body>
 </html>
