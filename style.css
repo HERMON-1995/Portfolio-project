@@ -293,11 +293,13 @@ h3 {
   margin-top: 35px;
   margin-bottom: 30px;
   color: white;
+  transition: all 0.3s;
 }
 
 .button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   background: #008552;
+  text-transform: uppercase;
 }
 
 .about-me {
