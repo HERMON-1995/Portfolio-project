@@ -1,40 +1,29 @@
 html {
   box-sizing: border-box;
+  width: 100%;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: antiquewhite;
+  background-image: url('./Header-images/desktop\ llustration-desktop@2x.svg');
+  background-size: 1100px 900px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 0;
 }
 
-body,
-p,
-a,
-ul,
-li {
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-section {
-  width: 375px;
-  height: auto;
-  background-color: white;
-  margin-bottom: 0;
-}
-
 .header {
   height: 48px;
-  border-bottom: 1px solid #f0f3f2;
   justify-content: space-between;
   display: flex;
   align-items: center;
-  background-color: white;
 }
 
 .logo {
@@ -46,24 +35,41 @@ section {
   margin-bottom: 60px;
 }
 
+.menu {
+  width: 18px;
+  height: 12px;
+  grid-column: 13;
+  grid-row: 1;
+  margin-right: 20px;
+}
+
+.nav-menu {
+  gap: 3rem;
+  display: none;
+}
+
+.nav-menu li a {
+  color: #172b4d;
+}
+
 ul {
   list-style: none;
 }
 
-.menu {
-  width: 18px;
-  height: 12px;
-  float: right;
-  margin-right: 35px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-item {
+  grid-column: 1/13;
+  grid-row: 1;
+  text-align: center;
 }
 
 .headline {
-  background-image: url('./Header-images/backgroundimg.svg');
-  background-repeat: no-repeat;
-  height: 774px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  width: 100%;
+  height: 1000px;
 }
 
 h1 {
@@ -81,7 +87,7 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  color: rgb(21, 170, 21);
+  color: #36b37f;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -131,13 +137,11 @@ h2 {
 }
 
 .recent-works {
-  width: 220px;
+  grid-column: 3/11;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-left: 75px;
-  margin-right: 25px;
   border-bottom: 4px solid #36b37e;
 }
 
@@ -149,6 +153,7 @@ h3 {
 }
 
 .project-section-1 {
+  grid-column: 4;
   border: 1px solid #d0d9d4;
   display: flex;
   flex-direction: column;
@@ -158,7 +163,37 @@ h3 {
   height: 474px;
   border-radius: 8px;
   margin-top: 64px;
-  margin-left: 23px;
+  margin-left: 10px;
+}
+
+.project-1 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-2 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-3 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-4 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-5 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-6 {
+  grid-column: 4;
+  margin-left: 25px;
 }
 
 .pic-1 {
@@ -248,13 +283,13 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
   width: 122px;
   height: 48px;
-  border-radius: 4px;
   background: #36b37f;
   border: 0;
   margin-left: 110px;
-  margin-right: 102px;
+  margin-right: 105px;
   margin-top: 35px;
   margin-bottom: 30px;
   color: white;
@@ -265,26 +300,16 @@ h3 {
   background: #008552;
 }
 
-.background {
-  width: 100px;
-  height: 107px;
-  background-image: url('./Header-images/about\ me\ background\ 2.svg');
-  background-repeat: no-repeat;
-  background-size: 65px;
-  margin-left: 310px;
-  margin-top: 10px;
-}
-
 .about-me {
-  background-image: url('./Header-images/about\ me\ left\ background\ image.svg');
-  background-repeat: no-repeat;
-  background-size: 430px 410px;
-  background-position: 0 30px;
-  display: grid;
+  background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 120px, 700px;
+  background-position: left 400px, top right;
 }
 
 .about-text-container {
-  margin-right: 120px;
+  padding: 70px 50px 0 50px;
+  grid-column: 1/13;
 }
 
 .about-text {
@@ -292,23 +317,19 @@ h3 {
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-  margin-left: 90px;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 .par-2-container {
-  width: 300px;
+  grid-column: 1/13;
   height: 189px;
-  margin-left: 35px;
-  margin-top: 0;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .par-2 {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
-  text-align: center;
   color: #42526e;
   flex: none;
   order: 1;
@@ -317,9 +338,11 @@ h3 {
 
 .resume {
   margin-left: 123px;
+  grid-column: 1/13;
 }
 
 .sections {
+  grid-column: 1/13;
   display: flex;
   flex-direction: column;
   width: 327px;
@@ -537,14 +560,16 @@ h4 {
 }
 
 .form {
-  background-image: url('./Header-images/back\ ground\ illustration\ form.svg');
+  background-image: url('./Header-images/form\ bottom\ right\ image.svg');
   background-repeat: no-repeat;
-  background-position: 320px 680px;
+  background-size: 60px;
+  background-position: right bottom;
+  padding: 0;
 }
 
 .form-text {
+  grid-column: 1/13;
   display: flex;
-  width: 350px;
   justify-content: center;
   margin-left: 11px;
 }
@@ -557,6 +582,7 @@ h4 {
 }
 
 .inputs {
+  grid-column: 1/13;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -569,17 +595,17 @@ h4 {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   background: #fff;
-  padding: 0 5px;
+  padding: auto;
   margin-bottom: 30px;
 }
 
-#msg {
+.msg {
   width: 327px;
   height: 114px;
   border: 1px solid #60c095;
   border-radius: 4px;
   background: #fff;
-  padding: 0 5px;
+  padding: auto;
 }
 
 .last {
@@ -602,4 +628,439 @@ h4 {
   text-align: center;
   color: #42526e;
   margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .recent-works {
+    grid-column: 2/12;
+  }
+
+  .project-section-1 {
+    grid-column: 6;
+  }
+
+  .project-1 {
+    margin-left: 90px;
+  }
+
+  .project-2 {
+    margin-left: 90px;
+  }
+
+  .project-3 {
+    margin-left: 90px;
+  }
+
+  .project-4 {
+    margin-left: 90px;
+  }
+
+  .project-5 {
+    margin-left: 90px;
+  }
+
+  .project-6 {
+    margin-left: 90px;
+  }
+
+  .about-text-container {
+    grid-column: 6;
+  }
+
+  .par-2-container {
+    grid-column: 2/12;
+    text-align: center;
+  }
+
+  .resume {
+    grid-column: 6;
+  }
+
+  .sections {
+    grid-column: 6;
+  }
+
+  .section-1 {
+    margin-left: 90px;
+  }
+
+  .section-2 {
+    margin-left: 90px;
+  }
+
+  .section-3 {
+    margin-left: 90px;
+  }
+
+  .form-text {
+    grid-column: 3/10;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .inputs {
+    grid-column: 6;
+  }
+
+  .last {
+    margin-right: 320px;
+  }
+
+  .footer {
+    border-top: 1px solid #dfe1e6;
+    height: 72px;
+  }
+
+  .email-address {
+    display: none;
+  }
+
+  .last-social {
+    margin-top: 27px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .grid-item {
+    grid-column: 3/11;
+  }
+
+  .project-1 {
+    grid-column: 5/6;
+    padding-right: 0;
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+
+  .project-3 {
+    grid-column: 5/6;
+    padding-right: 0;
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+
+  .project-5 {
+    grid-column: 5/6;
+    padding-right: 0;
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+
+  .about-me {
+    background-size: 210px, 1000px;
+    background-position: left 400px, top right;
+  }
+
+  .about-text-container {
+    grid-column: 3/11;
+  }
+
+  .par-2-container {
+    grid-column: 3/11;
+    text-align: center;
+  }
+
+  .resume {
+    grid-column: 6;
+  }
+
+  .section-1 {
+    grid-column: 5/6;
+    padding-right: 0;
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+
+  .section-3 {
+    grid-column: 5;
+    margin-right: 0;
+    margin-left: 97px;
+  }
+
+  .form {
+    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px, 100px, 100px;
+    background-position: 0, 150px bottom, right bottom;
+  }
+
+  .form-text {
+    grid-column: 3/11;
+  }
+
+  .inputs {
+    grid-column: 7;
+  }
+
+  .input {
+    width: 500px;
+  }
+
+  .msg {
+    width: 500px;
+  }
+
+  .last {
+    margin-right: 493px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-size: 1500px 900px;
+  }
+
+  .header {
+    border: 0;
+  }
+
+  .grid-item {
+    grid-column: 3/11;
+  }
+
+  .recent-works {
+    grid-column: 2/3;
+    border: 0;
+  }
+
+  .project-section-1 {
+    grid-column: 6;
+  }
+
+  .project-1 {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 120px;
+    margin-right: 0;
+  }
+
+  .project-2 {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .project-3 {
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 30px;
+  }
+
+  .project-4 {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 120px;
+    margin-right: 0;
+  }
+
+  .project-5 {
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .project-6 {
+    grid-column: 3;
+    grid-row: 3;
+    margin-left: 30px;
+  }
+
+  .about-me {
+    background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 230px, 1190px;
+    background-position: left 300px, top right;
+  }
+
+  .about-text-container {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .par-2-container {
+    grid-row: 2;
+    grid-column: 1/4;
+    text-align: center;
+  }
+
+  .resume {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .section-1 {
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 120px;
+    margin-right: 0;
+  }
+
+  .section-2 {
+    grid-column: 2;
+    grid-row: 4;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .section-3 {
+    grid-column: 3;
+    grid-row: 4;
+    margin-left: 30px;
+  }
+
+  .form {
+    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 120px, 120px, 110px;
+    background-position: 0, 150px bottom, right 140px;
+  }
+
+  .form-text {
+    grid-column: 2/7;
+  }
+
+  .inputs {
+    grid-column: 8/12;
+  }
+
+  .input {
+    width: 500px;
+  }
+
+  .msg {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    background-size: 1500px 1000px;
+  }
+
+  .grid-item {
+    grid-column: 4/10;
+  }
+
+  .recent-works {
+    grid-column: 2/3;
+    border: 0;
+  }
+
+  .project-1 {
+    grid-column: 1;
+    margin-left: 300px;
+    margin-right: 0;
+  }
+
+  .project-2 {
+    grid-column: 2;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .project-3 {
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 30px;
+  }
+
+  .project-4 {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 300px;
+    margin-right: 0;
+  }
+
+  .project-5 {
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .project-6 {
+    grid-column: 3;
+    grid-row: 3;
+    margin-left: 30px;
+  }
+
+  .about-me {
+    background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 330px, 1700px;
+    background-position: left 300px, top right;
+  }
+
+  .about-text-container {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .par-2-container {
+    grid-row: 2;
+    grid-column: 1/4;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 430px;
+  }
+
+  .resume {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .section-1 {
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 300px;
+    margin-right: 0;
+    margin-bottom: 180px;
+  }
+
+  .form {
+    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 220px, 120px, 150px;
+    background-position: 0, 150px bottom, right 50px;
+  }
+
+  .form-text {
+    grid-column: 3/7;
+  }
+
+  .inputs {
+    grid-column: 8/12;
+    margin-right: 100px;
+  }
+
+  .input {
+    width: 684px;
+  }
+
+  .msg {
+    width: 684px;
+  }
+
+  .last {
+    margin-right: 677px;
+  }
 }
