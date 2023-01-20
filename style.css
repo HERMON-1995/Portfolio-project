@@ -13,11 +13,7 @@ body {
   padding: 0;
 }
 
-body,
-p,
-a,
-ul,
-li {
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -25,7 +21,6 @@ li {
 
 .header {
   height: 48px;
-  border-bottom: 1px solid #f0f3f2;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -49,8 +44,6 @@ li {
 }
 
 .nav-menu {
-  grid-column: 7;
-  grid-row: 1;
   gap: 3rem;
   display: none;
 }
@@ -94,7 +87,7 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  color: rgb(21, 170, 21);
+  color: #36b37f;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -160,7 +153,7 @@ h3 {
 }
 
 .project-section-1 {
-  grid-column: 1/13;
+  grid-column: 4;
   border: 1px solid #d0d9d4;
   display: flex;
   flex-direction: column;
@@ -170,7 +163,37 @@ h3 {
   height: 474px;
   border-radius: 8px;
   margin-top: 64px;
-  margin-left: 23px;
+  margin-left: 10px;
+}
+
+.project-1 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-2 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-3 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-4 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-5 {
+  grid-column: 4;
+  margin-left: 25px;
+}
+
+.project-6 {
+  grid-column: 4;
+  margin-left: 25px;
 }
 
 .pic-1 {
@@ -608,19 +631,19 @@ h4 {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+
   .logo {
     display: none;
   }
 
   .menu {
-    grid-column: 13;
-    grid-row: 1;
     display: none;
   }
 
   .nav-menu {
-    grid-column: 7;
-    grid-row: 1;
     display: flex;
   }
 
@@ -630,6 +653,30 @@ h4 {
 
   .project-section-1 {
     grid-column: 6;
+  }
+
+  .project-1 {
+    margin-left: 90px;
+  }
+
+  .project-2 {
+    margin-left: 90px;
+  }
+
+  .project-3 {
+    margin-left: 90px;
+  }
+
+  .project-4 {
+    margin-left: 90px;
+  }
+
+  .project-5 {
+    margin-left: 90px;
+  }
+
+  .project-6 {
+    margin-left: 90px;
   }
 
   .about-text-container {
@@ -649,12 +696,44 @@ h4 {
     grid-column: 6;
   }
 
+  .section-1 {
+    margin-left: 90px;
+  }
+
+  .section-2 {
+    margin-left: 90px;
+  }
+
+  .section-3 {
+    margin-left: 90px;
+  }
+
   .form-text {
     grid-column: 3/10;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .inputs {
     grid-column: 6;
+  }
+
+  .last {
+    margin-right: 320px;
+  }
+
+  .footer {
+    border-top: 1px solid #dfe1e6;
+    height: 72px;
+  }
+
+  .email-address {
+    display: none;
+  }
+
+  .last-social {
+    margin-top: 27px;
   }
 }
 
@@ -667,21 +746,21 @@ h4 {
     grid-column: 5/6;
     padding-right: 0;
     margin-right: 50px;
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
   .project-3 {
     grid-column: 5/6;
     padding-right: 0;
     margin-right: 50px;
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
   .project-5 {
     grid-column: 5/6;
     padding-right: 0;
     margin-right: 50px;
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
   .about-me {
@@ -706,13 +785,13 @@ h4 {
     grid-column: 5/6;
     padding-right: 0;
     margin-right: 50px;
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
   .section-3 {
     grid-column: 5;
-    margin-left: 40px;
     margin-right: 0;
+    margin-left: 97px;
   }
 
   .form {
@@ -737,6 +816,10 @@ h4 {
   .msg {
     width: 500px;
   }
+
+  .last {
+    margin-right: 493px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -757,14 +840,20 @@ h4 {
     border: 0;
   }
 
+  .project-section-1 {
+    grid-column: 6;
+  }
+
   .project-1 {
     grid-column: 1;
-    margin-left: 70px;
+    grid-row: 2;
+    margin-left: 120px;
     margin-right: 0;
   }
 
   .project-2 {
     grid-column: 2;
+    grid-row: 2;
     margin-left: 30px;
     margin-right: 0;
   }
@@ -778,7 +867,7 @@ h4 {
   .project-4 {
     grid-column: 1;
     grid-row: 3;
-    margin-left: 70px;
+    margin-left: 120px;
     margin-right: 0;
   }
 
@@ -821,7 +910,7 @@ h4 {
   .section-1 {
     grid-column: 1;
     grid-row: 4;
-    margin-left: 70px;
+    margin-left: 120px;
     margin-right: 0;
   }
 
@@ -865,10 +954,6 @@ h4 {
 @media screen and (min-width: 1400px) {
   body {
     background-size: 1500px 1000px;
-  }
-
-  .nav-menu {
-    margin-right: 100px;
   }
 
   .grid-item {
