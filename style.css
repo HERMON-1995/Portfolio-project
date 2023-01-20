@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+section {
+  height: 726px;
+  width: 375px;
+  background-color: white;
+}
+
+.header {
+  width: 375px;
+  height: 48px;
+  border-bottom: 1px solid #f0f3f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #28352f;
+  margin-left: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  width: 18px;
+  height: 12px;
+  float: right;
+  margin-right: 35px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  background-image: url('/Header-images/backgroundimg.svg');
+  background-repeat: no-repeat;
+  height: 774px;
+  width: 375px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.par-1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  margin-top: 64px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.par-2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: rgb(21, 170, 21);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.par-3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #172b4d;
+  margin-right: 24px;
+  margin-left: 24px;
+  order: 1;
+  flex: none;
+  flex-grow: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.twitter {
+  margin-right: 25px;
+}
+
+.linkedin {
+  margin-right: 25px;
+}
+
+.medium {
+  margin-right: 25px;
+}
+
+.github {
+  margin-right: 20px;
+}
+
+.scroll-button {
+  margin-top: 25px;
+}
