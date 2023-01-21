@@ -293,11 +293,13 @@ h3 {
   margin-top: 35px;
   margin-bottom: 30px;
   color: white;
+  transition: all 0.3s;
 }
 
 .button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   background: #008552;
+  text-transform: uppercase;
 }
 
 .about-me {
@@ -599,6 +601,11 @@ h4 {
   margin-bottom: 30px;
 }
 
+.input:hover {
+  transition: all 0.3s;
+  background: #dfe1e6;
+}
+
 .msg {
   width: 327px;
   height: 114px;
@@ -606,6 +613,11 @@ h4 {
   border-radius: 4px;
   background: #fff;
   padding: auto;
+}
+
+.msg:hover {
+  transition: all 0.3s;
+  background: #dfe1e6;
 }
 
 .last {
