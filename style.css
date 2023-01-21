@@ -601,6 +601,11 @@ h4 {
   margin-bottom: 30px;
 }
 
+.input:hover {
+  transition: all 0.3s;
+  background: #dfe1e6;
+}
+
 .msg {
   width: 327px;
   height: 114px;
@@ -608,6 +613,11 @@ h4 {
   border-radius: 4px;
   background: #fff;
   padding: auto;
+}
+
+.msg:hover {
+  transition: all 0.3s;
+  background: #dfe1e6;
 }
 
 .last {
