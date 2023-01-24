@@ -61,7 +61,7 @@ Key Features
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- (https://github.com/HERMON-1995/My-portfolio)
+- (https://hermon-1995.github.io/My-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,6 +93,8 @@ Clone this repository to your desired folder: https://github.com/HERMON-1995/My-
 ### Run tests
 
 ### Deployment
+
+- (Deployment method using GitHub pages)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
