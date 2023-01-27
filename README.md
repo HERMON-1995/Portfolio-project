@@ -29,8 +29,9 @@
 
 # 📖 [My-portfolio] <a name="about-project"></a>
 
-**[My-portfolio]** is about building mobile version of the first page using Html and Css.
+**[My-portfolio]** is about building portfolio website using Html and CSS.
 
+ **[https://www.loom.com/share/8d027fdca7154c3781c50876eaff0933]** here is my short video explaining about my project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,6 +42,9 @@ Client
 Key Features
 
 [Mobile-first-branch]
+[Desktop-version-branch]
+[Portfolio-accessibilty-branch]
+[Application-deploy-branch]
 
 <details>
   <summary>Client</summary>
@@ -54,6 +58,9 @@ Key Features
 ### Key Features <a name="key-features"></a>
 
 - **[Mobile-first-branch]**
+- **[Desktop-version-branch]**
+- **[Portfolio-accessibilty-branch]**
+- **[Application-deploy-branch]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
