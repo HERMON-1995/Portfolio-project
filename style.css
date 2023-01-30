@@ -35,12 +35,64 @@ body {
   margin-bottom: 60px;
 }
 
-.menu {
+.hamburger {
   width: 18px;
-  height: 12px;
-  grid-column: 13;
-  grid-row: 1;
   margin-right: 20px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  display: block;
+  position: relative;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #28352f;
+  margin-bottom: 3px;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(0px, 5px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-2px, -7px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background: #ffffff;
+  padding-top: 80px;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  margin-left: 28px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
 }
 
 .nav-menu {
