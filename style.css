@@ -95,6 +95,16 @@ body {
   color: #3a4a42;
 }
 
+.mobile-nav a {
+display:block;
+margin-left: 28px;
+margin-bottom: 40px;
+font-weight: 600;
+font-size: 32px;
+line-height: 44px;
+color: #3a4a42;
+}
+
 .nav-menu {
   gap: 3rem;
   display: none;
