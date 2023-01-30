@@ -24,6 +24,7 @@ body {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  background-color: white;
 }
 
 .logo {
@@ -47,7 +48,9 @@ body {
   position: relative;
 }
 
-.hamburger .bar, .hamburger:after, .hamburger:before {
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
   content: '';
   display: block;
   width: 100%;
@@ -58,11 +61,11 @@ body {
   border-radius: 2px;
 }
 
-.hamburger.is-active:before {
-  transform: rotate(-45deg) translate(0px, 5px);
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(0, 5px);
 }
 
-.hamburger.is-active:after {
+.hamburger.is-active::after {
   transform: rotate(45deg) translate(-2px, -7px);
 }
 
@@ -71,13 +74,13 @@ body {
 }
 
 .mobile-nav {
-  position: fixed;
+  position: absolute;
   left: 100%;
   width: 100%;
   min-height: 100vh;
   display: block;
   z-index: 98;
-  background: #ffffff;
+  background: #fff;
   padding-top: 80px;
 }
 
@@ -93,16 +96,6 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
-}
-
-.mobile-nav a {
-display:block;
-margin-left: 28px;
-margin-bottom: 40px;
-font-weight: 600;
-font-size: 32px;
-line-height: 44px;
-color: #3a4a42;
 }
 
 .nav-menu {
@@ -713,7 +706,7 @@ h4 {
     display: none;
   }
 
-  .menu {
+  .hamburger {
     display: none;
   }
 
