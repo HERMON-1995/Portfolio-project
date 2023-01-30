@@ -50,7 +50,6 @@ body {
   border: none;
   position: relative;
   display: block;
-
 }
 
 .hamburger .bar,
@@ -90,7 +89,7 @@ body {
   min-height: 100vh;
   display: block;
   z-index: 98;
-  background: #ffffff;
+  background: #fff;
   padding-top: 80px;
   border-bottom-right-radius: 150px;
   border-bottom-left-radius: 150px;
