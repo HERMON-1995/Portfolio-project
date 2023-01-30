@@ -36,6 +36,10 @@ body {
   margin-bottom: 60px;
 }
 
+.logo.removed {
+  display: none;
+}
+
 .hamburger {
   width: 18px;
   margin-right: 20px;
@@ -44,8 +48,9 @@ body {
   background: none;
   outline: none;
   border: none;
-  display: block;
   position: relative;
+  display: block;
+
 }
 
 .hamburger .bar,
@@ -59,6 +64,11 @@ body {
   margin-bottom: 3px;
   transition: 0.4s;
   border-radius: 2px;
+}
+
+.header.float {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hamburger.is-active::before {
@@ -80,8 +90,29 @@ body {
   min-height: 100vh;
   display: block;
   z-index: 98;
-  background: #fff;
+  background: #ffffff;
   padding-top: 80px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+.bottom-div {
+  width: 100%;
+  height: 60px;
+  background: #e5e5e5;
+  margin-top: 500px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.line {
+  width: 120px;
+  height: 5px;
+  background: black;
+  border-radius: 4px;
+  margin-left: 140px;
+  align-self: flex-end;
+  margin-bottom: 8px;
 }
 
 .mobile-nav.is-active {
@@ -93,6 +124,7 @@ body {
   margin-left: 28px;
   margin-bottom: 40px;
   font-weight: 600;
+  font-family: 'Inter', sans-serif;
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
