@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Hermons' Portfolio</title>
 </head>
@@ -11,15 +14,21 @@
   <div>
     <header class="header">
      <h1 class="logo">Welcome</h1>
-     <nav class="site-nav"> 
-        <img class="menu" src="./Header-images/3-lines.svg" alt="Menu bars" title="bars">
-        <ul class="nav-menu">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+     <nav class="site-nav">
+       <button class="hamburger"><div class="bar" title="bars"></div></button>
+    <ul class="nav-menu">
+       <li><a href="#portfolio">Portfolio</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#contact">Contact</a></li>
+     </ul>
      </nav>
-    </header>
+   </header>
+  <nav class="mobile-nav">
+   <a href="#portfolio">Portfolio</a>
+   <a href="#about">About</a>
+   <a href="#contact">Contact</a>
+  <div class="bottom-div"><div class="line"></div></div>
+  </nav>
 
         <section class="headline grid">
           <div class="grid-item">
@@ -242,5 +251,7 @@
 
            <div class="email-container"><p class="email-address">hermonghiwot1995@gmail.com</p></div>
         </footer>
+
+        <script src="./main.js"></script>
 </body>
 </html>
