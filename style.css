@@ -130,6 +130,10 @@ body {
 }
 
 /* ----------------PopUp window styles below--------------*/
+.card-img {
+  width: 350px;
+  height: 250px;
+}
 
 .main {
   width: 100vw;
