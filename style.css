@@ -129,10 +129,16 @@ body {
   color: #3a4a42;
 }
 
-/* ----------------PopUp window styles below--------------*/
+/* ----------------PopUp window styles below-------------- */
 .card-img {
-  width: 350px;
-  height: 250px;
+  width: 325px;
+  height: 225px;
+  margin-left: 10px;
+  margin-top: 16px;
+}
+
+.card-img2 {
+  display: none;
 }
 
 .main {
@@ -140,12 +146,17 @@ body {
   height: 100%;
   position: fixed;
   top: 0;
-  background-color: #ffffff;
+  background: #c1c7d0;
 }
 
 .popup {
-  margin-left: 13px;
-  margin-top: 13px;
+  height: 880px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 20px;
+  margin-bottom: 26px;
+  background-color: white;
+  border-radius: 16px;
 }
 
 .close {
@@ -154,17 +165,21 @@ body {
 }
 
 .pop-h2 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .pop-lang {
   margin-top: 10px;
   margin-right: 110px;
+  margin-left: 45px;
 }
 
 .pop-par {
@@ -176,6 +191,7 @@ body {
   color: #344563;
   margin-top: 15px;
   margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .button1 {
@@ -190,16 +206,16 @@ body {
   color: white;
   transition: all 0.3s;
   font-size: 18px;
-  display: inline;
+  margin-left: 15px;
 }
 
-.button1 img{
+.button1 img {
   width: 19px;
   height: 19px;
   margin-left: 8px;
 }
 
-.button2 img{
+.button2 img {
   width: 19px;
   height: 19px;
   margin-left: 12px;
@@ -220,8 +236,27 @@ body {
   font-size: 18px;
 }
 
+.view-desktop {
+  display: none;
+}
 
-/* ----------------PopUp window styles above--------------*/
+.times {
+  display: none;
+}
+
+.tools .boot {
+  display: none;
+}
+
+.tools .ter {
+  display: none;
+}
+
+.tools .code {
+  display: none;
+}
+
+/* ----------------PopUp window styles above-------------- */
 
 .nav-menu {
   gap: 3rem;
@@ -818,6 +853,16 @@ h4 {
 }
 
 @media screen and (min-width: 768px) {
+  .card-img {
+    width: 700px;
+    height: 500px;
+    margin-left: 19px;
+  }
+
+  .button1 {
+    margin-left: 200px;
+  }
+
   .header {
     justify-content: center;
   }
@@ -925,6 +970,91 @@ h4 {
 }
 
 @media screen and (min-width: 960px) {
+  .times {
+    display: block;
+    margin-left: 745px;
+  }
+
+  .times-img {
+    width: 20px;
+    height: 17px;
+  }
+
+  .btn1 {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 122px;
+    height: 48px;
+    background: #36b37f;
+    border: 0;
+    color: white;
+    transition: all 0.3s;
+    font-size: 18px;
+    margin-left: 590px;
+  }
+
+  .btn2 {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 158px;
+    height: 48px;
+    background: #36b37f;
+    border: 0;
+    color: white;
+    transition: all 0.3s;
+    font-size: 18px;
+    margin-left: 15px;
+  }
+
+  .button1 {
+    display: none;
+  }
+
+  .button2 {
+    display: none;
+  }
+
+  .view-desktop {
+    display: flex;
+  }
+
+  .text-container {
+    width: 600px;
+  }
+
+  .pop-h2 {
+    margin-top: 0;
+  }
+
+  .pop-par {
+    margin-top: 25px;
+  }
+
+  .popup {
+    width: 920px;
+    height: 1075px;
+    margin-left: 150px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+
+  .card-img {
+    display: none;
+  }
+
+  .card-img2 {
+    display: block;
+    width: 850px;
+    height: 650px;
+    margin-top: 70px;
+    margin-left: 35px;
+  }
+
   .grid-item {
     grid-column: 3/11;
   }
@@ -1010,6 +1140,44 @@ h4 {
 }
 
 @media screen and (min-width: 1200px) {
+  .btn1 {
+    margin-top: 10px;
+    margin-left: 475px;
+  }
+
+  .btn2 {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  .text-container {
+    width: 600px;
+    margin-left: 20px;
+  }
+
+  .pop-par {
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+
+  .popup {
+    width: 800px;
+    height: 940px;
+    margin-left: 390px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .card-img2 {
+    display: block;
+    width: 800px;
+    height: 520px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+
   body {
     background-size: 1500px 900px;
   }
