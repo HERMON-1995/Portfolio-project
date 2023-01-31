@@ -6,7 +6,7 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  background-image: url('./Header-images/desktop\ llustration-desktop@2x.svg');
+  background-image: url('./images/desktop\ llustration-desktop@2x.svg');
   background-size: 1100px 900px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -128,6 +128,101 @@ body {
   line-height: 44px;
   color: #3a4a42;
 }
+
+/* ----------------PopUp window styles below--------------*/
+
+.card-img {
+  width: 350px;
+  height: 250px;
+}
+
+.main {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+}
+
+.popup {
+  margin-left: 13px;
+  margin-top: 13px;
+}
+
+.close {
+  border: 0;
+  background: 0;
+}
+
+.pop-h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.pop-lang {
+  margin-top: 10px;
+  margin-right: 110px;
+}
+
+.pop-par {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.button1 {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 122px;
+  height: 48px;
+  background: #36b37f;
+  border: 0;
+  color: white;
+  transition: all 0.3s;
+  font-size: 18px;
+  display: inline;
+}
+
+.button1 img{
+  width: 19px;
+  height: 19px;
+  margin-left: 8px;
+}
+
+.button2 img{
+  width: 19px;
+  height: 19px;
+  margin-left: 12px;
+}
+
+.button2 {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 158px;
+  height: 48px;
+  background: #36b37f;
+  border: 0;
+  margin-left: 12px;
+  color: white;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+
+
+/* ----------------PopUp window styles above--------------*/
 
 .nav-menu {
   gap: 3rem;
@@ -380,16 +475,11 @@ h3 {
   margin-bottom: 30px;
   color: white;
   transition: all 0.3s;
-}
-
-.button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  background: #008552;
-  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .about-me {
-  background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+  background-image: url('./images/desktop\ left\ illustration-about-me-2-.svg'), url('./images/desktop\ \ illustration\ about\ me.svg');
   background-repeat: no-repeat, no-repeat;
   background-size: 120px, 700px;
   background-position: left 400px, top right;
@@ -444,21 +534,21 @@ h3 {
 }
 
 .section-1 {
-  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-image: url('./images/Ellipse\ 15.svg');
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: 108px 41px;
 }
 
 .section-2 {
-  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-image: url('./images/Ellipse\ 15.svg');
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: 109px 41px;
 }
 
 .section-3 {
-  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-image: url('./images/Ellipse\ 15.svg');
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: 109px 41px;
@@ -648,7 +738,7 @@ h4 {
 }
 
 .form {
-  background-image: url('./Header-images/form\ bottom\ right\ image.svg');
+  background-image: url('./images/form\ bottom\ right\ image.svg');
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: right bottom;
@@ -893,7 +983,7 @@ h4 {
   }
 
   .form {
-    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-image: url('./images/form\ bottom\ left\ image.svg'), url('./images/form\ bottom\ middle\ image.svg'), url('./images/form\ bottom\ right\ image.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px, 100px, 100px;
     background-position: 0, 150px bottom, right bottom;
@@ -983,7 +1073,7 @@ h4 {
   }
 
   .about-me {
-    background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+    background-image: url('./images/desktop\ left\ illustration-about-me-2-.svg'), url('./images/desktop\ \ illustration\ about\ me.svg');
     background-repeat: no-repeat, no-repeat;
     background-size: 230px, 1190px;
     background-position: left 300px, top right;
@@ -1026,7 +1116,7 @@ h4 {
   }
 
   .form {
-    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-image: url('./images/form\ bottom\ left\ image.svg'), url('./images/form\ bottom\ middle\ image.svg'), url('./images/form\ bottom\ right\ image.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 120px, 120px, 110px;
     background-position: 0, 150px bottom, right 140px;
@@ -1102,7 +1192,7 @@ h4 {
   }
 
   .about-me {
-    background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+    background-image: url('./images/desktop\ left\ illustration-about-me-2-.svg'), url('./images/desktop\ \ illustration\ about\ me.svg');
     background-repeat: no-repeat, no-repeat;
     background-size: 330px, 1700px;
     background-position: left 300px, top right;
@@ -1135,7 +1225,7 @@ h4 {
   }
 
   .form {
-    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-image: url('./images/form\ bottom\ left\ image.svg'), url('./images/form\ bottom\ middle\ image.svg'), url('./images/form\ bottom\ right\ image.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 220px, 120px, 150px;
     background-position: 0, 150px bottom, right 50px;
