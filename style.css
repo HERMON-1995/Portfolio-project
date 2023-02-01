@@ -24,7 +24,6 @@ body {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  background-color: white;
 }
 
 .logo {
@@ -68,6 +67,7 @@ body {
 .header.float {
   display: flex;
   justify-content: flex-end;
+  background-color: white;
 }
 
 .hamburger.is-active::before {
@@ -82,9 +82,8 @@ body {
   opacity: 0;
 }
 
-.mobile-nav {
+.mobile-nav.is-active {
   position: absolute;
-  left: 100%;
   width: 100%;
   min-height: 100vh;
   display: block;
@@ -93,6 +92,11 @@ body {
   padding-top: 80px;
   border-bottom-right-radius: 150px;
   border-bottom-left-radius: 150px;
+  left: 0;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .bottom-div {
@@ -114,10 +118,6 @@ body {
   margin-bottom: 8px;
 }
 
-.mobile-nav.is-active {
-  left: 0;
-}
-
 .mobile-nav a {
   display: block;
   margin-left: 28px;
@@ -132,8 +132,8 @@ body {
 /* ----------------PopUp window styles below-------------- */
 .card-img {
   width: 325px;
-  height: 225px;
-  margin-left: 10px;
+  height: 230px;
+  margin-left: 13px;
   margin-top: 16px;
 }
 
@@ -171,8 +171,8 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 15px;
 }
 
@@ -189,9 +189,21 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 15px;
+}
+
+.button1 a {
+  color: white;
+}
+
+.btn1 a {
+  color: white;
+}
+
+.btn2 a {
+  color: white;
 }
 
 .button1 {
@@ -215,10 +227,8 @@ body {
   margin-left: 8px;
 }
 
-.button2 img {
-  width: 19px;
-  height: 19px;
-  margin-left: 12px;
+.button2 a {
+  color: white;
 }
 
 .button2 {
@@ -236,6 +246,12 @@ body {
   font-size: 18px;
 }
 
+.button2 img {
+  width: 19px;
+  height: 19px;
+  margin-left: 12px;
+}
+
 .view-desktop {
   display: none;
 }
@@ -244,15 +260,15 @@ body {
   display: none;
 }
 
-.tools .boot {
+ul li .boot {
   display: none;
 }
 
-.tools .ter {
+.ter {
   display: none;
 }
 
-.tools .code {
+.code {
   display: none;
 }
 
@@ -875,6 +891,10 @@ h4 {
     display: none;
   }
 
+  .mobile-nav {
+    display: none;
+  }
+
   .nav-menu {
     display: flex;
   }
@@ -1156,7 +1176,7 @@ h4 {
   }
 
   .pop-par {
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 30px;
   }
 
@@ -1187,7 +1207,7 @@ h4 {
   }
 
   .grid-item {
-    grid-column: 3/11;
+    grid-column: 4/10;
   }
 
   .recent-works {
@@ -1307,6 +1327,10 @@ h4 {
 }
 
 @media screen and (min-width: 1400px) {
+  .disappear-desk {
+    display: none;
+  }
+
   body {
     background-size: 1500px 1000px;
   }
