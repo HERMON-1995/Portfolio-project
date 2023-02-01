@@ -6,7 +6,7 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  background-image: url('./Header-images/desktop\ llustration-desktop@2x.svg');
+  background-image: url('./images/desktop\ llustration-desktop@2x.svg');
   background-size: 1100px 900px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -24,7 +24,6 @@ body {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  background-color: white;
 }
 
 .logo {
@@ -68,6 +67,7 @@ body {
 .header.float {
   display: flex;
   justify-content: flex-end;
+  background-color: white;
 }
 
 .hamburger.is-active::before {
@@ -82,9 +82,8 @@ body {
   opacity: 0;
 }
 
-.mobile-nav {
+.mobile-nav.is-active {
   position: absolute;
-  left: 100%;
   width: 100%;
   min-height: 100vh;
   display: block;
@@ -93,6 +92,11 @@ body {
   padding-top: 80px;
   border-bottom-right-radius: 150px;
   border-bottom-left-radius: 150px;
+  left: 0;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .bottom-div {
@@ -114,10 +118,6 @@ body {
   margin-bottom: 8px;
 }
 
-.mobile-nav.is-active {
-  left: 0;
-}
-
 .mobile-nav a {
   display: block;
   margin-left: 28px;
@@ -128,6 +128,151 @@ body {
   line-height: 44px;
   color: #3a4a42;
 }
+
+/* ----------------PopUp window styles below-------------- */
+.card-img {
+  width: 325px;
+  height: 230px;
+  margin-left: 13px;
+  margin-top: 16px;
+}
+
+.card-img2 {
+  display: none;
+}
+
+.main {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: #c1c7d0;
+}
+
+.popup {
+  height: 880px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 20px;
+  margin-bottom: 26px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.close {
+  border: 0;
+  background: 0;
+}
+
+.pop-h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.pop-lang {
+  margin-top: 10px;
+  margin-right: 110px;
+  margin-left: 45px;
+}
+
+.pop-par {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.button1 a {
+  color: white;
+}
+
+.btn1 a {
+  color: white;
+}
+
+.btn2 a {
+  color: white;
+}
+
+.button1 {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 122px;
+  height: 48px;
+  background: #36b37f;
+  border: 0;
+  color: white;
+  transition: all 0.3s;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.button1 img {
+  width: 19px;
+  height: 19px;
+  margin-left: 8px;
+}
+
+.button2 a {
+  color: white;
+}
+
+.button2 {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 158px;
+  height: 48px;
+  background: #36b37f;
+  border: 0;
+  margin-left: 12px;
+  color: white;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+
+.button2 img {
+  width: 19px;
+  height: 19px;
+  margin-left: 12px;
+}
+
+.view-desktop {
+  display: none;
+}
+
+.times {
+  display: none;
+}
+
+ul li .boot {
+  display: none;
+}
+
+.ter {
+  display: none;
+}
+
+.code {
+  display: none;
+}
+
+/* ----------------PopUp window styles above-------------- */
 
 .nav-menu {
   gap: 3rem;
@@ -380,16 +525,11 @@ h3 {
   margin-bottom: 30px;
   color: white;
   transition: all 0.3s;
-}
-
-.button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  background: #008552;
-  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .about-me {
-  background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+  background-image: url('./images/desktop\ left\ illustration-about-me-2-.svg'), url('./images/desktop\ \ illustration\ about\ me.svg');
   background-repeat: no-repeat, no-repeat;
   background-size: 120px, 700px;
   background-position: left 400px, top right;
@@ -444,21 +584,21 @@ h3 {
 }
 
 .section-1 {
-  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-image: url('./images/Ellipse\ 15.svg');
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: 108px 41px;
 }
 
 .section-2 {
-  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-image: url('./images/Ellipse\ 15.svg');
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: 109px 41px;
 }
 
 .section-3 {
-  background-image: url('./Header-images/Ellipse\ 15.svg');
+  background-image: url('./images/Ellipse\ 15.svg');
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: 109px 41px;
@@ -648,7 +788,7 @@ h4 {
 }
 
 .form {
-  background-image: url('./Header-images/form\ bottom\ right\ image.svg');
+  background-image: url('./images/form\ bottom\ right\ image.svg');
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: right bottom;
@@ -729,6 +869,16 @@ h4 {
 }
 
 @media screen and (min-width: 768px) {
+  .card-img {
+    width: 700px;
+    height: 500px;
+    margin-left: 19px;
+  }
+
+  .button1 {
+    margin-left: 200px;
+  }
+
   .header {
     justify-content: center;
   }
@@ -738,6 +888,10 @@ h4 {
   }
 
   .hamburger {
+    display: none;
+  }
+
+  .mobile-nav {
     display: none;
   }
 
@@ -836,6 +990,91 @@ h4 {
 }
 
 @media screen and (min-width: 960px) {
+  .times {
+    display: block;
+    margin-left: 745px;
+  }
+
+  .times-img {
+    width: 20px;
+    height: 17px;
+  }
+
+  .btn1 {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 122px;
+    height: 48px;
+    background: #36b37f;
+    border: 0;
+    color: white;
+    transition: all 0.3s;
+    font-size: 18px;
+    margin-left: 590px;
+  }
+
+  .btn2 {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 158px;
+    height: 48px;
+    background: #36b37f;
+    border: 0;
+    color: white;
+    transition: all 0.3s;
+    font-size: 18px;
+    margin-left: 15px;
+  }
+
+  .button1 {
+    display: none;
+  }
+
+  .button2 {
+    display: none;
+  }
+
+  .view-desktop {
+    display: flex;
+  }
+
+  .text-container {
+    width: 600px;
+  }
+
+  .pop-h2 {
+    margin-top: 0;
+  }
+
+  .pop-par {
+    margin-top: 25px;
+  }
+
+  .popup {
+    width: 920px;
+    height: 1075px;
+    margin-left: 150px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+
+  .card-img {
+    display: none;
+  }
+
+  .card-img2 {
+    display: block;
+    width: 850px;
+    height: 650px;
+    margin-top: 70px;
+    margin-left: 35px;
+  }
+
   .grid-item {
     grid-column: 3/11;
   }
@@ -893,7 +1132,7 @@ h4 {
   }
 
   .form {
-    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-image: url('./images/form\ bottom\ left\ image.svg'), url('./images/form\ bottom\ middle\ image.svg'), url('./images/form\ bottom\ right\ image.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px, 100px, 100px;
     background-position: 0, 150px bottom, right bottom;
@@ -921,6 +1160,44 @@ h4 {
 }
 
 @media screen and (min-width: 1200px) {
+  .btn1 {
+    margin-top: 10px;
+    margin-left: 475px;
+  }
+
+  .btn2 {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  .text-container {
+    width: 600px;
+    margin-left: 20px;
+  }
+
+  .pop-par {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  .popup {
+    width: 800px;
+    height: 940px;
+    margin-left: 390px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .card-img2 {
+    display: block;
+    width: 800px;
+    height: 520px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+
   body {
     background-size: 1500px 900px;
   }
@@ -930,7 +1207,7 @@ h4 {
   }
 
   .grid-item {
-    grid-column: 3/11;
+    grid-column: 4/10;
   }
 
   .recent-works {
@@ -983,7 +1260,7 @@ h4 {
   }
 
   .about-me {
-    background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+    background-image: url('./images/desktop\ left\ illustration-about-me-2-.svg'), url('./images/desktop\ \ illustration\ about\ me.svg');
     background-repeat: no-repeat, no-repeat;
     background-size: 230px, 1190px;
     background-position: left 300px, top right;
@@ -1026,7 +1303,7 @@ h4 {
   }
 
   .form {
-    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-image: url('./images/form\ bottom\ left\ image.svg'), url('./images/form\ bottom\ middle\ image.svg'), url('./images/form\ bottom\ right\ image.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 120px, 120px, 110px;
     background-position: 0, 150px bottom, right 140px;
@@ -1050,6 +1327,10 @@ h4 {
 }
 
 @media screen and (min-width: 1400px) {
+  .disappear-desk {
+    display: none;
+  }
+
   body {
     background-size: 1500px 1000px;
   }
@@ -1102,7 +1383,7 @@ h4 {
   }
 
   .about-me {
-    background-image: url('./Header-images/desktop\ left\ illustration-about-me-2-.svg'), url('./Header-images/desktop\ \ illustration\ about\ me.svg');
+    background-image: url('./images/desktop\ left\ illustration-about-me-2-.svg'), url('./images/desktop\ \ illustration\ about\ me.svg');
     background-repeat: no-repeat, no-repeat;
     background-size: 330px, 1700px;
     background-position: left 300px, top right;
@@ -1135,7 +1416,7 @@ h4 {
   }
 
   .form {
-    background-image: url('./Header-images/form\ bottom\ left\ image.svg'), url('./Header-images/form\ bottom\ middle\ image.svg'), url('./Header-images/form\ bottom\ right\ image.svg');
+    background-image: url('./images/form\ bottom\ left\ image.svg'), url('./images/form\ bottom\ middle\ image.svg'), url('./images/form\ bottom\ right\ image.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 220px, 120px, 150px;
     background-position: 0, 150px bottom, right 50px;
