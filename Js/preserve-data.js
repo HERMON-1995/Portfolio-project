@@ -1,6 +1,6 @@
 const datas = [];
-
-const addData = (ev) => {
+const form = document.querySelector('.inputs');
+form.addEventListener('submit', (ev) => {
   ev.preventDefault();
   const data = {
     id: Date.now(),
@@ -9,13 +9,15 @@ const addData = (ev) => {
     message: document.getElementById('message').value,
   };
   datas.push(data);
-  document.forms[0].reset();
+  localStorage.setItem('InputDataList', JSON.stringify(datas[0]));
+});
+const retrievedObject = localStorage.getItem('InputDataList');
+const getValue = JSON.parse(retrievedObject);
 
-  console.warn('Adjected', { datas });
-
-  localStorage.setItem('InputDataList', JSON.stringify(datas));
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('btnid').addEventListener('click', addData);
+window.addEventListener('load', () => {
+  if (localStorage.getItem('InputDataList')) {
+    document.getElementById('name').value = getValue.name;
+    document.getElementById('email').value = getValue.email;
+    document.getElementById('message').value = getValue.message;
+  }
 });
