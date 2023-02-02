@@ -1,8 +1,8 @@
-const formbutton = document.getElementById('btnid');
+//const formbutton = document.getElementById('btnid');
 
 function validate() {
   const emailText = document.getElementById('email').value;
-  const validator = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  //const validator = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
   document.forms[0].onsubmit = function email(e) {
     if (!(validator.test(emailText))) {
       document.getElementById('error-message').innerHTML = 'Please use lowercase letters only for a valid email address!';
@@ -15,5 +15,5 @@ function validate() {
   };
 }
 formbutton.addEventListener('click', () => {
-  validate();
+  //validate();
 });
