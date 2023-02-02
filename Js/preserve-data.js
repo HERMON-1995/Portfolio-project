@@ -12,8 +12,6 @@ const addData = (ev)=> {
     document.forms[0].reset();
 
     console.warn('Adjected', {datas});
-    let pre = document.getElementById('pre-msg');
-    pre.textContent = '\n' + JSON.stringify(datas, '\t', 3);
 
       localStorage.setItem('InputDataList', JSON.stringify(datas));
 
