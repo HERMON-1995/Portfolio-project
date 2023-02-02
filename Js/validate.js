@@ -15,5 +15,5 @@ function validate() {
   };
 }
 formbutton.addEventListener('click', () => {
- validate();
+  validate();
 });
