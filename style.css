@@ -827,6 +827,14 @@ h4 {
   margin-bottom: 30px;
 }
 
+#error-message {
+  position: relative;
+  top: -123px;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
 .input:hover {
   transition: all 0.3s;
   background: #dfe1e6;
@@ -850,6 +858,10 @@ h4 {
   margin-right: 120px;
 }
 
+.last:hover {
+  border: 1px solid green;
+}
+
 .footer {
   background: white;
 }
@@ -866,6 +878,10 @@ h4 {
   text-align: center;
   color: #42526e;
   margin-bottom: 100px;
+}
+
+input:invalid:focus {
+  border: red solid 3px;
 }
 
 @media screen and (min-width: 768px) {

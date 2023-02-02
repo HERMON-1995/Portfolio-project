@@ -224,11 +224,12 @@
            <form action="https://formspree.io/f/mpzewdrj" method="post" class="inputs grid">
              <input type="text" class="input"  name="user_name" placeholder="Full name" required maxlength="30">
 
-             <input type="email" class="input" name="user_email" placeholder="Email address" required>
+             <input id="email" type="email" class="input" name="user_email" placeholder="Email address" required>
 
              <textarea class="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
 
-             <button type="submit" class="button last">Get In Touch</button>
+             <button type="submit" class="button last" id="btnid">Get In Touch</button>
+             <span id="error-message"></span>
              
            </form>
 
@@ -254,6 +255,6 @@
 
         <script src="./Js/main.js"></script>
         <script src="./Js/popup-window.js"></script>
-
+        <script src="./Js/validate.js"></script>
 </body>
 </html>
