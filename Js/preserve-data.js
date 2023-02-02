@@ -13,7 +13,6 @@ form.addEventListener('submit', (ev) => {
 });
 const retrievedObject = localStorage.getItem('InputDataList');
 const getValue = JSON.parse(retrievedObject);
-
 window.addEventListener('load', () => {
   if (localStorage.getItem('InputDataList')) {
     document.getElementById('name').value = getValue.name;
