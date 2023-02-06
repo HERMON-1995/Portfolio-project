@@ -222,11 +222,11 @@
            <div class="form-text"><h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3></div>
 
            <form action="https://formspree.io/f/mpzewdrj" method="post" class="inputs grid">
-             <input type="text" class="input"  name="user_name" placeholder="Full name" required maxlength="30">
+             <input id="name" type="text" class="input"  name="user_name" placeholder="Full name" required maxlength="30">
 
              <input id="email" type="email" class="input" name="user_email" placeholder="Email address" required>
 
-             <textarea class="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
+             <textarea id="message" class="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
 
              <button type="submit" class="button last" id="btnid">Get In Touch</button>
              <span id="error-message"></span>
@@ -256,5 +256,6 @@
         <script src="./Js/main.js"></script>
         <script src="./Js/popup-window.js"></script>
         <script src="./Js/validate.js"></script>
+        <script src="./Js/preserve-data.js"></script>
 </body>
 </html>
