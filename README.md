@@ -68,7 +68,7 @@ Key Features
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- (https://hermon-1995.github.io/My-portfolio/)
+- [See live here](https://hermon-1995.github.io/Portfolio-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
